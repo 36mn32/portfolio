@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">CAD mechanical part illustration</title>
+  <desc id="desc">A teal and coral wireframe drawing of a machined component on a drafting grid.</desc>
+  <defs>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#b9cbc6" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="panel" x2="0" y2="1">
+      <stop stop-color="#e6efeb"/>
+      <stop offset="1" stop-color="#d5e3de"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#panel)"/>
+  <rect width="900" height="600" fill="url(#grid)" opacity=".72"/>
+  <path d="M238 342 430 230l239 123-191 119z" fill="#fff" fill-opacity=".55" stroke="#176b67" stroke-width="5"/>
+  <path d="m238 342 1 96 239 125v-91" fill="#176b67" fill-opacity=".12" stroke="#176b67" stroke-width="5"/>
+  <path d="m478 472 191-119v96L478 563z" fill="#e58a68" fill-opacity=".3" stroke="#176b67" stroke-width="5"/>
+  <path d="m332 289 191 99v55l-191-99z" fill="#f6f5f0" stroke="#176b67" stroke-width="4"/>
+  <ellipse cx="428" cy="323" rx="39" ry="20" fill="#e6efeb" stroke="#176b67" stroke-width="4"/>
+  <path d="M389 323v30m78-30v30" fill="none" stroke="#176b67" stroke-width="4"/>
+  <path d="m200 456-48-24m505-119 52-31M454 514v44" fill="none" stroke="#e58a68" stroke-width="3" stroke-dasharray="8 8"/>
+  <circle cx="152" cy="432" r="5" fill="#e58a68"/>
+  <circle cx="707" cy="282" r="5" fill="#e58a68"/>
+  <circle cx="454" cy="558" r="5" fill="#e58a68"/>
+</svg>

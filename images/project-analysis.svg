@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering test and analysis illustration</title>
+  <desc id="desc">A test specimen beneath a measuring instrument beside an engineering line chart.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#c5d3ce" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="600" fill="#e5eeea"/>
+  <rect width="900" height="600" fill="url(#grid)"/>
+  <rect x="105" y="98" width="340" height="370" rx="12" fill="#f6f5f0" stroke="#176b67" stroke-width="5"/>
+  <path d="M151 415h250M183 387V153" fill="none" stroke="#61717b" stroke-width="4"/>
+  <path d="m186 354 55-62 50 25 61-113 46-26" fill="none" stroke="#e58a68" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="241" cy="292" r="7" fill="#176b67"/>
+  <circle cx="291" cy="317" r="7" fill="#176b67"/>
+  <circle cx="352" cy="204" r="7" fill="#176b67"/>
+  <path d="M560 151h172v62H560z" fill="#176b67"/>
+  <path d="M591 213v62m110-62v62" stroke="#176b67" stroke-width="16"/>
+  <path d="M613 275h66l-9 115h-48z" fill="#e58a68" stroke="#61717b" stroke-width="5"/>
+  <path d="M552 394h188v35H552z" fill="#176b67"/>
+  <path d="M585 429v54m122-54v54" stroke="#61717b" stroke-width="12"/>
+  <path d="M589 125h113m-84-31v58" fill="none" stroke="#61717b" stroke-width="5"/>
+  <circle cx="645" cy="182" r="12" fill="#f6f5f0"/>
+  <path d="M477 168h36m-18-18v36" stroke="#e58a68" stroke-width="5" stroke-linecap="round"/>
+</svg>
