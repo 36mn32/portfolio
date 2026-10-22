@@ -265,17 +265,59 @@ h3 {
 }
 
 .skills-list li {
-  display: flex;
-  min-height: 84px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 18px 20px;
+  align-self: start;
   border: 1px solid var(--line);
   border-radius: 6px;
   background: var(--surface);
 }
+.skill-details summary {
+  display: flex;
+  min-height: 84px;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  list-style: none;
+}
 
+.skill-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.skill-details summary::after {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-right: 2px solid var(--teal);
+  border-bottom: 2px solid var(--teal);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.skill-details[open] summary::after {
+  transform: rotate(225deg);
+}
+
+.skill-details summary:hover {
+  background: var(--paper);
+}
+
+.skill-details summary:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 4px;
+}
+
+.skill-details .skill-level {
+  margin-left: auto;
+}
+
+.skill-description {
+  margin: 0 20px;
+  padding-block: 16px 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
 .skill-name {
   font-weight: 700;
 }
