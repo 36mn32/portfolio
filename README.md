@@ -12,3 +12,6 @@ Open `index.html` in a web browser. The site uses plain HTML and CSS and does no
 - Update the three project cards and replace their illustrations in `images/` with project photos or renders.
 - Adjust the skills and proficiency labels to match your experience. Each skill expands when clicked or activated with the keyboard; replace its placeholder paragraph in `skills.html` with your description.
 - Add your preferred contact information on the Contact page. The site has no backend, so it does not include a message-sending form.
+## Current content
+
+The portfolio includes Max's introduction, NJIT contact details, customized skill descriptions, and Onshape and SolidWorks project images in the project gallery. Some sections still contain placeholders for future updates.
