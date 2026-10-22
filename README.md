@@ -15,3 +15,5 @@ Open `index.html` in a web browser. The site uses plain HTML and CSS and does no
 ## Current content
 
 The portfolio includes Max's introduction, NJIT contact details, customized skill descriptions, and Onshape and SolidWorks project images in the project gallery. Some sections still contain placeholders for future updates.
+
+Every page includes a footer with a **Contact me** link to the Contact page.
