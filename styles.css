@@ -8,6 +8,10 @@
   --teal: #176b67;
   --teal-dark: #105552;
   --coral: #e58a68;
+  --button-text: #ffffff;
+  --note-surface: rgb(255 255 255 / 55%);
+  --note-border: #b8c7c2;
+  --image-surface: #e4ece8;
   --serif: Georgia, "Times New Roman", serif;
   --sans: "Segoe UI", Arial, sans-serif;
 }
@@ -173,7 +177,7 @@ h3 {
   border: 1px solid var(--teal);
   border-radius: 4px;
   background: var(--teal);
-  color: white;
+  color: var(--button-text);
   font-size: 0.93rem;
   font-weight: 700;
   text-decoration: none;
@@ -205,9 +209,9 @@ h3 {
   min-height: 260px;
   align-content: center;
   padding: 36px;
-  border: 1px dashed #b8c7c2;
+  border: 1px dashed var(--note-border);
   border-radius: 8px;
-  background: rgb(255 255 255 / 55%);
+  background: var(--note-surface);
 }
 
 .empty-note p {
@@ -234,7 +238,7 @@ h3 {
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  background: #e4ece8;
+  background: var(--image-surface);
 }
 
 .project-copy {
@@ -440,4 +444,49 @@ h3 {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #e8eff3;
+  --muted: #b1c1ca;
+  --paper: #111c24;
+  --surface: #1b2b36;
+  --line: #3a505d;
+  --teal: #7dd3c9;
+  --teal-dark: #a2e6dd;
+  --coral: #f2aa8d;
+  --button-text: #111c24;
+  --note-surface: #1b2b36;
+  --note-border: #536c78;
+  --image-surface: #263c48;
+}
+
+.theme-toggle {
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid var(--teal);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--teal);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle[aria-pressed="true"] {
+  background: var(--teal);
+  color: var(--button-text);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 4px;
+}
+
+.header-inner {
+  flex-wrap: wrap;
 }

@@ -4,7 +4,7 @@ A responsive, static portfolio website with pages for Home, About Me, Projects, 
 
 ## View locally
 
-Open `index.html` in a web browser. The site uses plain HTML and CSS and does not require a build step or dependencies.
+Open `index.html` in a web browser. The site uses plain HTML, CSS, and JavaScript and does not require a build step or dependencies.
 
 ## Personalize
 
@@ -17,3 +17,5 @@ Open `index.html` in a web browser. The site uses plain HTML and CSS and does no
 The portfolio includes Max's introduction, NJIT contact details, customized skill descriptions, and Onshape and SolidWorks project images in the project gallery. Some sections still contain placeholders for future updates.
 
 Every page includes a footer with a **Contact me** link to the Contact page.
+
+The **Dark mode** button in every page header switches between light and dark colors, including text and cards. Your choice is saved in browser storage and restored across pages and visits when storage is available. Without JavaScript, the site keeps its light appearance.
