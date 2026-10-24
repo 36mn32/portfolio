@@ -16,6 +16,8 @@ Open `index.html` in a web browser. The site uses plain HTML, CSS, and JavaScrip
 
 The portfolio includes Max's introduction, NJIT contact details, customized skill descriptions, and Onshape and SolidWorks project images in the project gallery. Some sections still contain placeholders for future updates.
 
+The home page links directly to the About Me and Projects pages. About Me describes involvement in NJIT FormulaSAE and ASME, and the Skills page includes descriptions of materials, metrology, and engineering mechanics. The Contact page includes a phone-number placeholder.
+
 Every page includes a footer with a **Contact me** link to the Contact page.
 
 The **Dark mode** button in every page header switches between light and dark colors, including text and cards. Your choice is saved in browser storage and restored across pages and visits when storage is available. Without JavaScript, the site keeps its light appearance.
