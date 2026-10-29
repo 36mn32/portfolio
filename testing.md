@@ -2,11 +2,11 @@
 
 Run on the live GitHub Pages URL from repository Settings > Pages, not Live Preview.
 
-- Live URL: __________
-- Tester / date / browser version: __________
-- Deployed commit: __________
+- Live URL: https://36mn32.github.io/portfolio/
+- Tester / date / browser version: Codex / 2026-10-29 / installed Google Chrome (version pending)
+- Deployed commit at initial test: cbc7e24
 
-Execution status: **Not run**. This is a proposed test plan, not a record of completed tests. Replace each result with Pass or Fail after execution. For grouped steps, every check must pass. Retain failed attempts and record the fix and retest below.
+Execution status: **In progress**. Only observed outcomes are marked passed or failed; incomplete cases remain Not run. For grouped steps, every check must pass. Retain failed attempts and record the fix and retest below.
 
 Phone: 390 × 844. Laptop: 1366 × 768. Use 100% zoom. Repeat layout and keyboard cases in both light and dark mode. No forms or validation exist; valid/invalid form-input testing is not applicable. Skill dropdowns are native HTML; the theme toggle is the JavaScript feature.
 
@@ -37,7 +37,7 @@ Phone: 390 × 844. Laptop: 1366 × 768. Use 100% zoom. Repeat layout and keyboar
 | T23 | Laptop layout: contact.html | Open live contact.html at 1366 × 768. Scroll fully and use the controls in both themes. | Header, content, images, and footer fit and remain readable without overlap. | Not run |
 | T24 | Keyboard navigation: contact.html | Open live contact.html. Tab through every control, Shift+Tab backward, and activate links and theme button with Enter; return after navigation. On Skills, open and close all eight summaries with Enter. Repeat in both themes. | Visible focus in logical order; all controls work without a mouse; no keyboard trap. | Not run |
 | T25 | Lighthouse Accessibility: contact.html | Open live contact.html in Chrome DevTools Lighthouse. Audit Accessibility separately for Mobile and Desktop in each theme. Save four reports and record scores below. | All four scores are at least 90/100 (project target). Review flagged issues alongside manual keyboard results. | Not run |
-| T26 | Home content buttons | On live index.html click Learn more about me and Explore my projects; return between clicks. | Open about.html and projects.html respectively. | Not run |
+| T26 | Home content buttons | On live index.html click Learn more about me and Explore my projects; return between clicks. | Open about.html and projects.html respectively. | passed |
 | T27 | Theme switching on every page | On all five live pages, start in light mode, click Dark mode twice. | Backgrounds, text, cards, header, and footer change to readable dark colors then return to light; no console errors. | Not run |
 | T28 | Saved theme across pages and reloads | Select dark mode; visit and reload every live page. Select light mode and repeat. | Selected theme persists across navigation and reloads. | Not run |
 | T29 | Saved theme after reopening | Select dark mode; close and reopen the live site in the same browser profile. Repeat for light mode. | Last selected theme is restored when storage is available. | Not run |
@@ -46,7 +46,7 @@ Phone: 390 × 844. Laptop: 1366 × 768. Use 100% zoom. Repeat layout and keyboar
 | T32 | Storage blocked | In a profile that blocks site storage, verify localStorage access is denied; reload every live page and toggle twice. Restore permissions afterward. | Pages load and toggle works without uncaught errors; persistence is not required while storage is denied. | Not run |
 | T33 | JavaScript disabled | Disable JavaScript on the live site; reload every page. Try links and skill dropdowns. Restore JavaScript afterward. | Pages remain readable in light mode; navigation and native dropdowns work; theme button is hidden. | Not run |
 | T34 | Eight skill dropdowns | On live skills.html at both viewport sizes, click each summary to open and close it. Open several together. | Each reveals its matching paragraph, arrow changes, closing hides content, and no overlap occurs. | Not run |
-| T35 | Project images and alternative text | On live projects.html at both sizes and themes, inspect all three cards, Network image requests, and alt text. | cadproj.png, Percy.png, and cadproj2.png load; images remain usable; alternative text accurately describes each image. | Not run |
+| T35 | Project images and alternative text | On live projects.html at both sizes and themes, inspect all three cards, Network image requests, and alt text. | cadproj.png, Percy.png, and cadproj2.png load; images remain usable; alternative text accurately describes each image. | failed |
 | T36 | Contact details | Inspect live contact.html in both sizes and themes. | Email is readable in its obfuscated form; phone placeholder is recognizable; no nonworking form is shown. | Not run |
 
 ## Evidence and failure/retest log
@@ -56,3 +56,7 @@ For each Lighthouse case record Mobile light, Desktop light, Mobile dark, Deskto
 | Test ID | Date / browser / viewport / theme | Initial result and evidence | Fix / deployed commit | Retest result and evidence |
 | :-- | :-- | :-- | :-- | :-- |
 | — | — | Not run | — | Not run |
+
+| T26 | 2026-10-29 / Chrome / live site | passed: both homepage content buttons opened the correct About Me and Projects pages. | None | Not required |
+| T35 | 2026-10-29 / Chrome / live Projects page | failed: first two image descriptions refer to old placeholders rather than the CAD plate and Percy drawing; all images rendered. | Corrected alt text; retest pending. | Not run |
+| T15 | 2026-10-29 / Chrome / Mobile light / Lighthouse 13.5.0 | Partial: Accessibility 100/100. Other device/theme combinations pending. | None | Not run |
