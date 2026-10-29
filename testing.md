@@ -3,7 +3,7 @@
 Run on the live GitHub Pages URL from repository Settings > Pages, not Live Preview.
 
 - Live URL: https://36mn32.github.io/portfolio/
-- Tester / date / browser version: Codex / 2026-10-29 / installed Google Chrome (version pending)
+- Tester / date / browser version: Codex / 2026-10-29 / Chrome (audit reports Chromium 156.0.0.0), Lighthouse 13.5.0
 - Deployed commit at initial test: cbc7e24
 
 Execution status: **In progress**. Only observed outcomes are marked passed or failed; incomplete cases remain Not run. For grouped steps, every check must pass. Retain failed attempts and record the fix and retest below.
@@ -60,3 +60,7 @@ For each Lighthouse case record Mobile light, Desktop light, Mobile dark, Deskto
 | T26 | 2026-10-29 / Chrome / live site | passed: both homepage content buttons opened the correct About Me and Projects pages. | None | Not required |
 | T35 | 2026-10-29 / Chrome / live Projects page | failed: first two image descriptions refer to old placeholders rather than the CAD plate and Percy drawing; all images rendered. | Corrected alt text; retest pending. | Not run |
 | T15 | 2026-10-29 / Chrome / Mobile light / Lighthouse 13.5.0 | Partial: Accessibility 100/100. Other device/theme combinations pending. | None | Not run |
+
+### Execution limitation
+
+Live testing resumed successfully in Chrome. T26 passed and T35 failed on the initial deployment. The Projects mobile/light Lighthouse audit reported Accessibility 100/100; the full T15 case is incomplete because the other three combinations were not run. Report export opened a Save As dialog, but the computer-use input API repeatedly rejected the freshly observed filename control as unavailable. Keyboard focus also could not be reliably moved. No exported report was saved. Remaining cases stay Not run; these are incomplete tests, not website failures. The image-description correction was pushed in fd4590b, but a live retest is still required before recording a pass for T35.
