@@ -23,3 +23,5 @@ Every page includes a footer with a **Contact me** link to the Contact page.
 The **Dark mode** button in every page header switches between light and dark colors, including text and cards. Your choice is saved in browser storage and restored across pages and visits when storage is available. Without JavaScript, the site keeps its light appearance.
 
 The project gallery includes an angled CAD plate and a stop-base assembly image (cadproj2.png) in place of the engineering-analysis illustration.
+
+On screens up to 760px wide, project cards stack the full image above the description. Images keep their original proportions, and long titles wrap within the card. Larger screens show uncropped images inside consistent image frames.
